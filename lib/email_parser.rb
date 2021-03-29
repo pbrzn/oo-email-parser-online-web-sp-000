@@ -11,7 +11,9 @@ class EmailAddressParser
   
   def parse
     email_array = @all_emails.split(/,|\s|[, ]/)
-    
-    #email_array.uniq
+    email_array.collect do |email\
+      email.delete if email==""
+    end
+    email_array.uniq
   end
 end
