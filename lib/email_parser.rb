@@ -14,6 +14,6 @@ class EmailAddressParser
     email_array.each do |email|
       email.delete if !email.include?("@")
     end
-    email.
+    email_array.uniq
   end
 end
