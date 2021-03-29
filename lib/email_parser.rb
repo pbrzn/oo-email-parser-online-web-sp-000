@@ -11,9 +11,9 @@ class EmailAddressParser
   
   def parse
     email_array = @all_emails.split("\n")
-    email_array.each do |email|
-      email.delete if !email.include?("@")
-    end
+    #email_array.each do |email|
+    #  email.delete if !email.include?("@")
+    #end
     email_array.uniq
   end
 end
