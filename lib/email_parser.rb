@@ -10,7 +10,7 @@ class EmailAddressParser
   end
   
   def parse
-    email_array = @all_emails.split(", ").split(" ")
+    email_array = @all_emails.split(", ")
     #email_array.each do |email|
     #  email.delete if !email.include?("@")
     #end
