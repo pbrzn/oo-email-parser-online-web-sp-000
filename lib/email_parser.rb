@@ -12,7 +12,7 @@ class EmailAddressParser
   def parse
     email_array = @all_emails.split(/,|\s/)
     email_array.each do |email|
-      email.delete if !email.include?("@")
+      email.delete if email==""
     end
     email_array.uniq
   end
